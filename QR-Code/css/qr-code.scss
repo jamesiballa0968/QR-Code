@@ -1,8 +1,5 @@
 // IMPORTS
-@font-face {
-  font-family: "Outfit";
-  src: url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
-}
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap");
 
 //RESERVE
 
@@ -21,6 +18,7 @@ body {
 //ATTRIBUTION
 
 .attribution {
+  margin: 2em auto;
   font-size: 11px;
   text-align: center;
 }
@@ -28,3 +26,52 @@ body {
   color: hsl(228, 45%, 44%);
 }
 //BODY
+
+.main-ctn {
+  background: hsl(212, 45%, 89%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__card-ctn {
+    
+
+    border-radius: 20px;
+    background: hsl(0, 0%, 100%);
+    width: min-content;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+    &__img {
+      margin: 10px;
+      border-radius: 12px;
+      &.--size {
+        width: 270px;
+      }
+    }
+
+    &__desc-ctn {
+      margin: 0px 20px;
+      margin-bottom: 40px;
+      &__title-1 {
+        font-size: 1.3em;
+        font-weight: bold;
+        margin-top: 10px;
+
+        &.--color {
+          color: hsl(218, 44%, 22%);
+        }
+      }
+
+      &__desc-1 {
+        font-size: 0.9em;
+        color: hsl(220, 15%, 55%);
+      }
+    }
+  }
+}
+
+// -
+// - Light gray:
+// - Grayish blue: hsl(220, 15%, 55%)
+// - Dark blue: hsl(218, 44%, 22%)
